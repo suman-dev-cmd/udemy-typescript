@@ -21,7 +21,7 @@ const repositoriesReducer = (state:RepositoriesState = initialState,action:Actio
             }
         case ActionType.SEARCH_REPOSITORIES_SUCCESS:
             return{
-                loading:true,
+                loading:false,
                 error:null,
                 data:action.payload
             }
